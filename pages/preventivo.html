@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PX-Preventivo</title>
+
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<meta name="theme-color" content="#2091F9">
+	<meta name="title" content="CURSOS DEL FUTURO">
+	<meta name="description"
+		content="Somos un grupo que ofrecemos nuestros conocimientos a los precios mas bajos incluyendo el gratuito">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="#">
+	<meta property="og:title" content="CURSOS DEL FUTURO">
+	<meta property="og:description"
+		content="Somos un grupo que ofrecemos nuestros conocimientos a los precios mas bajos incluyendo el gratuito">
+	<meta property="og:image" content="#">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+	<link rel="shortcut icon" href="../icon.ico" type="image/x-icon">
+	<style>
+		#video{
+			display: none;
+		}
+
+		#video2{
+			display: none;
+		}
+
+		#mp4{
+			position: absolute;
+			left: 315px;
+			top: 15px;
+		}
+
+		#mp42{
+			position: absolute;
+			left: 315px;
+			top: 15px;
+		}
+
+		#ocultar{
+			position: absolute;
+			top: 10px;
+			left: 15px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+
+	<main>
+    
+		<nav class="nav">
+			<ul class="list">
+	
+				<li class="list__item">
+					<div class="list__button">
+						<img src="../assets/dashboard.svg" class="list__img">
+						<a href="../index.html" class="nav__link">Inicio</a>
+					</div>
+
+					<script>
+						function mostrar(){
+							document.getElementById('video').style.display = 'block';
+						}
+
+						function ocultar(){
+							document.getElementById('video').style.display = 'none';
+						}
+
+						function mostrar2(){
+							document.getElementById('video2').style.display = 'block';
+						}
+
+						function ocultar2(){
+							document.getElementById('video2').style.display = 'none';
+						}
+
+
+					</script>
+				</li>
+	
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+						<img src="../assets/docs.svg" class="list__img">
+						<a href="#" class="nav__link">M.Preventivo</a>
+						<img src="../assets/arrow.svg" class="list__arrow">
+					</div>
+	
+					<ul class="list__show">
+
+						<li class="list__inside">
+							<a href="#" class="nav__link nav__link--inside" id="clic" onclick="mostrar();">Curso 1</a>
+							<div id="video">
+								<a id="ocultar" onclick="ocultar();">Ocultar video</a>
+								<iframe id="mp4" width="900" height="628" src="https://www.youtube.com/embed/KJbLiV6Y9sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+								
+							</div>
+						</li>
+
+						<li class="list__inside">
+							<a href="#" class="nav__link nav__link--inside" id="clic" onclick="mostrar2();">Curso 2</a>
+							<div id="video2">
+								<a id="ocultar" onclick="ocultar2();">Ocultar video</a>
+								<iframe id="mp42" width="900" height="628" src="https://www.youtube.com/embed/BVIdzytAtkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</li>
+
+
+					</ul>
+	
+				</li>
+	
+				<li class="list__item list__item--click">
+					<div class="list__button list__button--click">
+						<img src="../assets/stats.svg" class="list__img">
+						<a href="#" class="nav__link">Cursos</a>
+						<img src="../assets/arrow.svg" class="list__arrow">
+					</div>
+	
+					<ul class="list__show">
+						<li class="list__inside">
+							<a href="../pages/html.html" class="nav__link nav__link--inside">HTML</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/electronica.html" class="nav__link nav__link--inside">Electronica</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/binarios.html" class="nav__link nav__link--inside">Binarios</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/css.html" class="nav__link nav__link--inside">CSS</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/correctivo.html" class="nav__link nav__link--inside">M.Correctivo</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/ensamble.html" class="nav__link nav__link--inside">Ensamble</a>
+						</li>
+
+						<li class="list__inside">
+							<a href="../pages/desensamble.html" class="nav__link nav__link--inside">Desensamble</a>
+						</li>
+					</ul>
+	
+				</li>
+	
+	
+				<li class="list__item">
+					<div class="list__button">
+						<img src="../assets/message.svg" class="list__img">
+						<a href="#contacto" class="nav__link">Contacto</a>
+					</div>
+				</li>
+	
+			</ul>
+		</nav>
+	
+		
+		<script src="../js/main.js"></script>
+	</main>
+
+	<footer>
+		<div class="contenedor-footer" id="contacto">
+			<div class="content-foo">
+				<h4>Numero</h4>
+				<a href="https://api.whatsapp.com/send/?phone=573043696454&text&type=phone_number&app_absent=0">3043696454</a>
+			</div>
+			<div class="content-foo">
+				<h4>Email</h4>
+				<a href="mailto:pagepixeltech@gmail.com">pagepixeltech@gmail.com</a>
+
+			</div>
+			<div class="content-foo">
+				<h4>Ubicacion</h4>
+				<a href="https://www.google.com/maps/place/PixelTech/@6.2657759,-75.5422263,17z/data=!3m1!4b1!4m5!3m4!1s0x8e4429915e9bdd05:0x89a5a2cc1e22373c!8m2!3d6.2657781!4d-75.5421612">Medellin</a>
+			</div>
+		</div>
+		<h2 class="titulo-final">&copy; PixelTech | Cursos en linea</h2>
+	</footer>
+</body>
+
+</html>
